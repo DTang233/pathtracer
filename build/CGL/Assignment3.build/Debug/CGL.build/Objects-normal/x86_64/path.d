@@ -1,0 +1,2 @@
+dependencies: \
+  /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp

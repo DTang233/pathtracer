@@ -1,0 +1,1933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		33C7DCE99D3B48239461014C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44E70150EA9646708ED6C2A6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B1B080FA18904F4185FB8964 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		698E784AC0304CF2818EDD96 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5B75C263C9CA4644A148E110 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				5EF9D473041646FA815D0753 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		7F88F4543337471196BBB9E8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FED377FEF454475BA3CEB5D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				ECE7D942E40547378EE343FE /* CMake Rules */,
+			);
+			dependencies = (
+				0871A42249CA4EDAAA7BE014 /* PBXTargetDependency */,
+				1B6308B9A12E4E569469360F /* PBXTargetDependency */,
+				D5D92980CBBB4B03A7BD6242 /* PBXTargetDependency */,
+				4E7AE09D584941B9A22BBFC9 /* PBXTargetDependency */,
+				0B47B6D903CE46B48FCB72B3 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BA79204476AA4F5997E882E4 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 30EF930E19154854A07BD25F /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				B63CCD51D4ED44CB858F81FF /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				EB2ED175068C48DEAB18B540 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00C68171D4154D26A3189E47 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = B94D278E31F24B98920654C0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.c */; };
+		06874CC62D314D03885ED4B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.cpp */ = {isa = PBXBuildFile; fileRef = 32C1B8EEF9DC4EAD882A2272 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.cpp */; };
+		0A7E59CBA7EC47B995BDAF64 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.h */ = {isa = PBXBuildFile; fileRef = 6382FDCC25414F2CBC4DEF9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.h */; };
+		0C03EA5F9C1C4C2B80F2EF73 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = AA868B68D7234F72B903DA80 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.h */; };
+		11F587B461FB4438B3821820 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = ED88707F23164E4B826FA87D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdfont.cpp */; };
+		1260FFFB1D4949EB9B4FD099 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = F192DB0A6EC049E1BA16A270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		13B37F7AD61D455DA40C1C16 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/ambient_light.h */ = {isa = PBXBuildFile; fileRef = 19F1B1F179CB400D80292703 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/ambient_light.h */; };
+		1540C66A3AA74A79A2E1786C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 95A65A3DDD0742D7984C0601 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/mappings.h */; };
+		15842FEF1B00409CA8DB8F21 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = B37B4D251594412196168718 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glew.c */; };
+		1758EC6B3672425F82C959B2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.cpp */ = {isa = PBXBuildFile; fileRef = B0558891BE3442C18BB70E6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.cpp */; };
+		17797B0DC72543C79A71A910 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.h */ = {isa = PBXBuildFile; fileRef = F66FF90FB8AD4EF2ACFEAEF9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.h */; };
+		19EB5FE4F1DC4B3DB1197E89 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/ray.h */ = {isa = PBXBuildFile; fileRef = FB83771B79EA42A6BBF80288 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/ray.h */; };
+		1E65E14DBA0C439A8A689AE7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = A37E813D8F8F4B19854C98DA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector3D.cpp */; };
+		1E8632097BF74A42B0C606E6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.h */ = {isa = PBXBuildFile; fileRef = 4A440DC6B80E436DB6C8C947 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.h */; };
+		1F611772B7A84A41A42F2F27 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = E4A4E5A140054696BAAE88FD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.h */; };
+		1FEBC02670A5432D97C52B14 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5B4757E26FD04C4C9E50D0CF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/CMakeLists.txt */; };
+		2311257921E04C108A6C6877 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/aggregate.h */ = {isa = PBXBuildFile; fileRef = 59284C51458E42529F5818F8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/aggregate.h */; };
+		2367D57D83644BFCB26EA971 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXBuildFile; fileRef = 860C563E6003464CB16E7481 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.cpp */; };
+		259E1B9C0B9B4883BE4EB2C1 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/spot_light.h */ = {isa = PBXBuildFile; fileRef = CB9671E850794E33B4D6878B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/spot_light.h */; };
+		277B38C0F6CE468F99D410B7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 67B3E182F6814169B486D3B3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		27926D4F002A445B8211C821 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = C2414AFA16C5446CA92675EA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		290DB3CD7CB04ED2BEA9BC07 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/directional_light.h */ = {isa = PBXBuildFile; fileRef = 49207111DAF341B6B9018D5A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/directional_light.h */; };
+		2A46A6F700B5451E9A371F05 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.h */ = {isa = PBXBuildFile; fileRef = EEA1B6382C914059B6A09D4D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.h */; };
+		2EC81D1F7D8149478C21F4FD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 3A8A97CEA4BE44F48F4153D8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.h */; };
+		2F31964B721B4CB79D6716F7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.h */ = {isa = PBXBuildFile; fileRef = F778D71A3D7040849544FCE0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.h */; };
+		35F533812E2E4B2BA5B1E664 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = BBC8A9C3A7214468AE3ADFDE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.h */; };
+		382E0C9555E741D5B04EF13F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = A1C437C440EE4A889F421EF2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.h */; };
+		39030572929E4E85851690DC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp */ = {isa = PBXBuildFile; fileRef = B1651B882F4C407B9F678ADD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp */; };
+		3EF07643EBE84C6A95D89CAC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 13D630B6B89B4E7BACC9105E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/CMakeLists.txt */; };
+		40AB25B97455445785233C30 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = 27C30DBDD0354916B67E615D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/environment_light.h */; };
+		40D210C15EA54421BD7B5C6C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.cpp */ = {isa = PBXBuildFile; fileRef = E0ED373CAF284D4E87134A72 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.cpp */; };
+		42E51C71F7594B12A639BFE3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = FDB04D227D794C29902BC869 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix3x3.cpp */; };
+		465F6EA09692417587603E77 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = EF99A08C0F254420BFDE9656 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		479FA9A8BDEC4FCAAD531391 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 0A678B914754423FA58C93AD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_platform.h */; };
+		485B6A57E12D416084D5FE70 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 1F3A1149B908476FB06D335D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		48B8A00703C64DF8B4052008 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = E655E5B8C2A640E784463EF3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		4CDBE6FB94CE4A9D98128B29 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.h */ = {isa = PBXBuildFile; fileRef = 15EBEF25A33C468A860AE778 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.h */; };
+		4E5D7B2CCDFE4379B67BE40D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 7E44BD6188444AC98E4F7B95 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		4EB2E2185C4F4334A92C4A2D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.h */ = {isa = PBXBuildFile; fileRef = EA3EADEE78314B22958A9C6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.h */; };
+		53EB7D60D43847EC8AE47B78 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.h */ = {isa = PBXBuildFile; fileRef = BA98D5AA47394C10A4E295D6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.h */; };
+		550CE4E1ACB44E4A93E0D842 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = E1F97BD0F1D54397B476A6B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/internal.h */; };
+		551FE30542D54A929B51B43D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.h */ = {isa = PBXBuildFile; fileRef = BDB88FC26F5E4A5881A7288A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.h */; };
+		590EBD4FDA144ED5A73CAD25 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 02322095FA514257B8D1D446 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.cpp */; };
+		59636A880F1D418D8B01CBEA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = BBBFF7A4FE7D4816B444FE51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/quaternion.cpp */; };
+		59D5D233549C41779F7814B5 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 3D4B1AAA53764C9082F64853 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.m */; };
+		5AFEC5BE3B154C8BB165BCC4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = 0E93179446B5413C916164A0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector4D.cpp */; };
+		5CC591AE63DB4DDFBED3B59C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.cpp */ = {isa = PBXBuildFile; fileRef = 6410F5DDD5034CC28B061702 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.cpp */; };
+		5EC147DF7AC548D79C8E4A8C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 3AF1BD4C7BA6417E8AAE2569 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		612E2965390D431D834D5B27 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 66F3D7F1752748C3A0906270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.cpp */; };
+		61383D45E2A04B66A042B7A9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = B4EBC6ACEC9A4D8C89D36AD6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix4x4.cpp */; };
+		63FA4DFBB5E44637A6B327DB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.cpp */ = {isa = PBXBuildFile; fileRef = F4933E2AA4864657A1E2C34D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.cpp */; };
+		63FBDBBF970D4DA0986A7556 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.h */ = {isa = PBXBuildFile; fileRef = 0FF6293AF4FD45FF8F15E1E3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.h */; };
+		662D0041444143BEBB7A85D1 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/scene.h */ = {isa = PBXBuildFile; fileRef = A7081B93327446A68C3BF78B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/scene.h */; };
+		6692A6A90B12459EABAAC71A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/area_light.h */ = {isa = PBXBuildFile; fileRef = 48C1C39A26AF46A48FC955A9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/area_light.h */; };
+		69AB37B655A74ACD8C3F2ABE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 4DDBB37922B545D3A90A0506 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/tinyxml2.cpp */; };
+		6ABD6ECAA8CE47A58BD97A96 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/image.h */ = {isa = PBXBuildFile; fileRef = 784A40C29963401C8575ADB6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/image.h */; };
+		6AD8CC10F4874FB8A7774898 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/point_light.h */ = {isa = PBXBuildFile; fileRef = 88FA1C940C1A4986BBDCA32E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/point_light.h */; };
+		6D0DB748BE4C44669ED2634D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.h */ = {isa = PBXBuildFile; fileRef = 76317389C5364B08AE350690 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.h */; };
+		6F4EE34CB0044C01950EADEC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = D37133D946334501B9EB5CD2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.h */; };
+		73E04EBB2DCD4F0A8EFFADE8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.cpp */ = {isa = PBXBuildFile; fileRef = 8E54769331A34CF6B9ABCE43 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.cpp */; };
+		73EF1000EBAC458AA428B77F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.cpp */ = {isa = PBXBuildFile; fileRef = A4B557D6B5E342C88EF7FC1C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.cpp */; };
+		7FC4BA9A0EEA4FA8A5E63225 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.h */ = {isa = PBXBuildFile; fileRef = 08281077B423478D97931279 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.h */; };
+		8215BB66DD44452186B29063 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.h */ = {isa = PBXBuildFile; fileRef = 00800AC6832647D683D8C9AA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.h */; };
+		828C90C3EEDC47F08E66013F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/renderer.h */ = {isa = PBXBuildFile; fileRef = 3B94BF6905804BBCBF279719 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/renderer.h */; };
+		8647F839C01C475C8F8FA9F7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.cpp */ = {isa = PBXBuildFile; fileRef = 14E7D93D4ACB48F1B0E2C10F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.cpp */; };
+		87F234F280B64B438519593C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.h */ = {isa = PBXBuildFile; fileRef = 68BB7D262E494DE18C69F987 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.h */; };
+		8BDAECBB719E428F8FE4C96A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/spectrum.cpp */ = {isa = PBXBuildFile; fileRef = B039E108A3C845BC8787A2CC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/spectrum.cpp */; };
+		8C1BE2CD30994A4A94E51DBC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.cpp */ = {isa = PBXBuildFile; fileRef = 7BD28263D41E48C5A19B748C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.cpp */; };
+		8E73809AD6A04072BA54A54E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.h */ = {isa = PBXBuildFile; fileRef = 7441374065A843679A487A32 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.h */; };
+		8F2B0A26248843E69A136297 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/primitive.h */ = {isa = PBXBuildFile; fileRef = B68DC0915F2E4AD7A0E2FFAB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/primitive.h */; };
+		94E9E22F3105449B85AA6B4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = 04A13FA384C246BF830916D9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/visualinfo.c */; };
+		95A779E4C96A4675A755BD3F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = 7BE3DFD0D8D84826BF090F51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glewinfo.c */; };
+		95D40D95E1074600A06A2FA6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.cpp */ = {isa = PBXBuildFile; fileRef = FE2561162B9C47448C26DC31 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.cpp */; };
+		963AA9AEF15D478B8EA0BFA7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F4C32E5D9E4E4D95A514B84B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/CMakeLists.txt */; };
+		97633DC0C3F74FEF82308E47 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.h */ = {isa = PBXBuildFile; fileRef = 98B28E506AE04E628F9E6E55 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.h */; };
+		98ECF950A30A4F459599E1BA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/work_queue.h */ = {isa = PBXBuildFile; fileRef = F1FF1513AD6F4258BDBAE496 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/work_queue.h */; };
+		9AC79F99ACFD4C1EAD96C850 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 74DDF6F9EE344257B6563D29 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		9AE369AB99CC4E22A006A37D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.cpp */ = {isa = PBXBuildFile; fileRef = 079549496B264FE68FE4DA9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.cpp */; };
+		A4F13A2CD8B942048C53094D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = BE919D29FF6C47A8A7507199 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_time.c */; };
+		A4F3A351BE0B413BB657506A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.h */ = {isa = PBXBuildFile; fileRef = 8BAE88DACD374A6894643CD8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.h */; };
+		AAA1C32209AE42A4A4AE263F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/draw_style.h */ = {isa = PBXBuildFile; fileRef = FA7DF05B31DF4A5F822FD522 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/draw_style.h */; };
+		AD6256FE3E064228AE4EF906 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.cpp */ = {isa = PBXBuildFile; fileRef = A85C3291241A4399B10ED413 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.cpp */; };
+		B07AFFA6809F40E197C57BD4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 913468B892B64A80868CF977 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector2D.cpp */; };
+		B3232AC30D1145B28B3B1FAB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = 5DAB5ABE0E874FA5A560D900 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdtext.cpp */; };
+		B75C6980750A4E5E94BC302D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 0B90E8925B5B4FA083D71BAF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/glfw_config.h */; };
+		B95035FE8B604D12AA886190 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.cpp */ = {isa = PBXBuildFile; fileRef = 30B0213AB6C347BF86954C4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.cpp */; };
+		BDD8955B287141AF97C35C69 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.h */ = {isa = PBXBuildFile; fileRef = 832AFDE27D78400CA0EF1D6C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.h */; };
+		C3049C2E682647BE9E7D31B6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.cpp */ = {isa = PBXBuildFile; fileRef = 1764EEBE3AB348FB87AF29C5 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.cpp */; };
+		C72751BE894E4CA3940F9AB8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.cpp */ = {isa = PBXBuildFile; fileRef = E326A4168B4F4B1FAD38BED4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.cpp */; };
+		C740355358F341DE94CC863E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada_info.h */ = {isa = PBXBuildFile; fileRef = 89C49F879D604C63B92BF986 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada_info.h */; };
+		C775AA39314F4B5990B681FB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = AB698C0640BD40D4BFF61D4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.m */; };
+		CA3E5BB120CA4FF49371EDFE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.cpp */ = {isa = PBXBuildFile; fileRef = D49F1D3E3F2144B5A6B8FFE8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.cpp */; };
+		CA85304FBA374DC49C435752 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.h */ = {isa = PBXBuildFile; fileRef = 6966E364BD914DC08ACFA466 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.h */; };
+		CF6A0F4835114356A2968819 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.cpp */ = {isa = PBXBuildFile; fileRef = FD205FB7A1F9469A9FDFE4BE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.cpp */; };
+		D03660801AC64900811890CF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.cpp */ = {isa = PBXBuildFile; fileRef = 78FE23F83C0E4FF7A9430E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.cpp */; };
+		D207E9CC59F1483D8C7A7175 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 3BF875615C214B0293E5196A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/color.cpp */; };
+		D3E791AF53D94AC6B51562BB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CAB975CB75614CA3AF07D1FB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */; };
+		D422F9DDDEF04D64AD24009E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 81FB0B1C9AC14F30A663C73C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/complex.cpp */; };
+		D4FBED153EB4494683DEFD53 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 3D46E49200DB48D3A030EC34 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_window.m */; };
+		D53A49BB8C514F85B27E89D7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 2837637C18104A33BE7FA51D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		D743AAD3F1914AF7B5F09ADC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = F02D16B29A7B41FAB6C5F28B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		D7EB55F533654775B7E651F3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh_view.h */ = {isa = PBXBuildFile; fileRef = 1FED22CE1C804743BEF10B0E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh_view.h */; };
+		D93B6568CB17489391A3526E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.cpp */ = {isa = PBXBuildFile; fileRef = 6D05D7D0EA984DAFA89FA6EE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.cpp */; };
+		D99E2084E17F401EBDC607FA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.h */ = {isa = PBXBuildFile; fileRef = AFD0E028741B4C96A9D7847F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.h */; };
+		DBA5AF3052084EC2AC8D9EB2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/random_util.h */ = {isa = PBXBuildFile; fileRef = 608935DC03C84552BBDCE6F0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/random_util.h */; };
+		DE3ADFC74004427798FB88B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.cpp */ = {isa = PBXBuildFile; fileRef = B13BCDD0AFD644F7BD9B9145 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.cpp */; };
+		E8ADDBD2ED824453917C39B9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = 10025D51D55648848A270E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/viewer.cpp */; };
+		EADC4DA904C44D5C8EB42C98 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.cpp */ = {isa = PBXBuildFile; fileRef = 8FFF0AD151884F9394B5C57F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.cpp */; };
+		EB56A91EE2C547E3B84FB1F3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 08FFCD529F74483DA864A2D2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.h */; };
+		F0A31414A20547DDB11652AC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.h */ = {isa = PBXBuildFile; fileRef = 31E5AB5835A844CC88BA8387 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.h */; };
+		F1A8FFED071F4F5FB12B4DE3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.h */ = {isa = PBXBuildFile; fileRef = 3DE5F6D0026748238B97C55B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.h */; };
+		F1EF366F019A43BFA0CC3186 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/material.h */ = {isa = PBXBuildFile; fileRef = 0BBFD4E20BFA401E9CC2B8A3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/material.h */; };
+		F36B3657680449BA84E5363D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/intersection.h */ = {isa = PBXBuildFile; fileRef = 29C8D533F27A4A50A34B9A60 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/intersection.h */; };
+		F3FF58710E6A4335B9F46036 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/mutablePriorityQueue.h */ = {isa = PBXBuildFile; fileRef = 63EA78F6E44F43D983F279E6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/mutablePriorityQueue.h */; };
+		F7936F45E01D46FD8FEEF18F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/main.cpp */ = {isa = PBXBuildFile; fileRef = 7B682128D3674CD098E72CA4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/main.cpp */; };
+		F8CB54EC06E44097AAB29076 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.cpp */ = {isa = PBXBuildFile; fileRef = 8FEAF4DC9CD046D689FF33FF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.cpp */; };
+		F8DB6F52E3FA40A581781A54 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = A6BE80CB7E9C49F4B3076BFC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/base64.cpp */; };
+		F9AA56B339C44A32B6F222A4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.h */ = {isa = PBXBuildFile; fileRef = 4A305F138CBB4F7BA8C02720 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.h */; };
+		FC7BD6B6976E4EA8B63F3335 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = C06B41C4B2F4446684CE9944 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_init.m */; };
+		FCB1D1BCF8A4430E91C7E869 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 46F951C282D944D9AE115DC8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/lodepng.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2FF0056A22C94A98A8496777 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		58144720684640D4AC8F1706 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		76C7E778255D4B54A544FD65 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		9A666BC6B1D54126A9EB998F /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		08E3A20F8DFE4CF481F54F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2C66F332794F5681758107;
+			remoteInfo = pathtracer;
+		};
+		279F4716B007462CBEC934CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17BFF24C5DC04BBBBF48C83B;
+			remoteInfo = glfw;
+		};
+		3B74D40F46884EDE9615DC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C8C54D639747948119C7BB;
+			remoteInfo = CGL;
+		};
+		60D44CF124CE41C3B4B0F35F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F88F4543337471196BBB9E8;
+			remoteInfo = ALL_BUILD;
+		};
+		656C3381C90349A3908A29F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17BFF24C5DC04BBBBF48C83B;
+			remoteInfo = glfw;
+		};
+		7001DB9A758F4E39A4F3318D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC68D680895C404F80009FAF;
+			remoteInfo = glew;
+		};
+		746C4490D2614950A7D55F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33C7DCE99D3B48239461014C;
+			remoteInfo = ZERO_CHECK;
+		};
+		8E9CC3BCAD08454389D01CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17BFF24C5DC04BBBBF48C83B;
+			remoteInfo = glfw;
+		};
+		D5E56A9461184B44B48A177C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33C7DCE99D3B48239461014C;
+			remoteInfo = ZERO_CHECK;
+		};
+		DDA9A984D71147F698002922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC68D680895C404F80009FAF;
+			remoteInfo = glew;
+		};
+		F9A89F999D1B43F3A9FF3D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC68D680895C404F80009FAF;
+			remoteInfo = glew;
+		};
+		FD75851ACBA9426CA82E8112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5349C1BBE214C3796A3D137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C8C54D639747948119C7BB;
+			remoteInfo = CGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00800AC6832647D683D8C9AA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/scene/gl_scene/mesh.h; sourceTree = SOURCE_ROOT; };
+		02322095FA514257B8D1D446 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/scene/gl_scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		04A13FA384C246BF830916D9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CGL/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		079549496B264FE68FE4DA9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/scene/collada/collada.cpp; sourceTree = SOURCE_ROOT; };
+		08281077B423478D97931279 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera_info.h; path = src/scene/collada/camera_info.h; sourceTree = SOURCE_ROOT; };
+		08FFCD529F74483DA864A2D2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = CGL/deps/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		0A678B914754423FA58C93AD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CGL/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		0B90E8925B5B4FA083D71BAF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = build/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		0BBFD4E20BFA401E9CC2B8A3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/scene/gl_scene/material.h; sourceTree = SOURCE_ROOT; };
+		0E565DBACD404D14AC81EDEF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0E93179446B5413C916164A0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CGL/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		0FF6293AF4FD45FF8F15E1E3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/pathtracer/camera.h; sourceTree = SOURCE_ROOT; };
+		10025D51D55648848A270E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CGL/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		13D630B6B89B4E7BACC9105E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		14E7D93D4ACB48F1B0E2C10F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/util/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+		15EBEF25A33C468A860AE778 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		16A42BBE8F584174BA98483B /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1764EEBE3AB348FB87AF29C5 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/application/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		19F1B1F179CB400D80292703 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/ambient_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ambient_light.h; path = src/scene/gl_scene/ambient_light.h; sourceTree = SOURCE_ROOT; };
+		1F3A1149B908476FB06D335D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CGL/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		1FED22CE1C804743BEF10B0E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh_view.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh_view.h; path = src/scene/gl_scene/mesh_view.h; sourceTree = SOURCE_ROOT; };
+		27C30DBDD0354916B67E615D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/gl_scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		2837637C18104A33BE7FA51D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = CGL/deps/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		29C8D533F27A4A50A34B9A60 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/intersection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = intersection.h; path = src/pathtracer/intersection.h; sourceTree = SOURCE_ROOT; };
+		30B0213AB6C347BF86954C4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_drawing.cpp; path = src/util/sphere_drawing.cpp; sourceTree = SOURCE_ROOT; };
+		31E5AB5835A844CC88BA8387 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bbox.h; path = src/scene/bbox.h; sourceTree = SOURCE_ROOT; };
+		32C1B8EEF9DC4EAD882A2272 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light_info.cpp; path = src/scene/collada/light_info.cpp; sourceTree = SOURCE_ROOT; };
+		3A8A97CEA4BE44F48F4153D8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/util/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		3AF1BD4C7BA6417E8AAE2569 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CGL/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		3B94BF6905804BBCBF279719 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = src/application/renderer.h; sourceTree = SOURCE_ROOT; };
+		3BF875615C214B0293E5196A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CGL/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		3D46E49200DB48D3A030EC34 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CGL/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		3D4B1AAA53764C9082F64853 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = CGL/deps/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		3DE5F6D0026748238B97C55B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pathtracer.h; path = src/pathtracer/pathtracer.h; sourceTree = SOURCE_ROOT; };
+		46F951C282D944D9AE115DC8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = CGL/src/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		48C1C39A26AF46A48FC955A9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/area_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = area_light.h; path = src/scene/gl_scene/area_light.h; sourceTree = SOURCE_ROOT; };
+		49207111DAF341B6B9018D5A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/directional_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = directional_light.h; path = src/scene/gl_scene/directional_light.h; sourceTree = SOURCE_ROOT; };
+		4A305F138CBB4F7BA8C02720 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/gl_scene/scene.h; sourceTree = SOURCE_ROOT; };
+		4A440DC6B80E436DB6C8C947 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/application/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		4DDBB37922B545D3A90A0506 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CGL/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		5755E7234A764044B27463D1 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59284C51458E42529F5818F8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/aggregate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = aggregate.h; path = src/scene/aggregate.h; sourceTree = SOURCE_ROOT; };
+		5B4757E26FD04C4C9E50D0CF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5DAB5ABE0E874FA5A560D900 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CGL/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		608935DC03C84552BBDCE6F0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/random_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = random_util.h; path = src/util/random_util.h; sourceTree = SOURCE_ROOT; };
+		6382FDCC25414F2CBC4DEF9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bvh.h; path = src/scene/bvh.h; sourceTree = SOURCE_ROOT; };
+		63EA78F6E44F43D983F279E6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/mutablePriorityQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutablePriorityQueue.h; path = src/util/mutablePriorityQueue.h; sourceTree = SOURCE_ROOT; };
+		6410F5DDD5034CC28B061702 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pathtracer.cpp; path = src/pathtracer/pathtracer.cpp; sourceTree = SOURCE_ROOT; };
+		66F3D7F1752748C3A0906270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		67B3E182F6814169B486D3B3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CGL/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		68BB7D262E494DE18C69F987 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sampler.h; path = src/pathtracer/sampler.h; sourceTree = SOURCE_ROOT; };
+		6966E364BD914DC08ACFA466 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bsdf.h; path = src/pathtracer/bsdf.h; sourceTree = SOURCE_ROOT; };
+		6D05D7D0EA984DAFA89FA6EE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bbox.cpp; path = src/scene/bbox.cpp; sourceTree = SOURCE_ROOT; };
+		7441374065A843679A487A32 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = application.h; path = src/application/application.h; sourceTree = SOURCE_ROOT; };
+		74DDF6F9EE344257B6563D29 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = CGL/deps/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		76317389C5364B08AE350690 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = triangle.h; path = src/scene/triangle.h; sourceTree = SOURCE_ROOT; };
+		784A40C29963401C8575ADB6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/util/image.h; sourceTree = SOURCE_ROOT; };
+		78FE23F83C0E4FF7A9430E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangle.cpp; path = src/scene/triangle.cpp; sourceTree = SOURCE_ROOT; };
+		7B682128D3674CD098E72CA4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/application/main.cpp; sourceTree = SOURCE_ROOT; };
+		7BD28263D41E48C5A19B748C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene/gl_scene/scene.cpp; sourceTree = SOURCE_ROOT; };
+		7BE3DFD0D8D84826BF090F51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CGL/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		7E44BD6188444AC98E4F7B95 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CGL/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		81FB0B1C9AC14F30A663C73C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CGL/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		832AFDE27D78400CA0EF1D6C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/scene/collada/collada.h; sourceTree = SOURCE_ROOT; };
+		860C563E6003464CB16E7481 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytraced_renderer.cpp; path = src/pathtracer/raytraced_renderer.cpp; sourceTree = SOURCE_ROOT; };
+		88FA1C940C1A4986BBDCA32E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/point_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = point_light.h; path = src/scene/gl_scene/point_light.h; sourceTree = SOURCE_ROOT; };
+		89C49F879D604C63B92BF986 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada_info.h; path = src/scene/collada/collada_info.h; sourceTree = SOURCE_ROOT; };
+		8BAE88DACD374A6894643CD8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material_info.h; path = src/scene/collada/material_info.h; sourceTree = SOURCE_ROOT; };
+		8E54769331A34CF6B9ABCE43 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/scene/gl_scene/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		8FEAF4DC9CD046D689FF33FF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light.cpp; path = src/scene/light.cpp; sourceTree = SOURCE_ROOT; };
+		8FFF0AD151884F9394B5C57F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_info.cpp; path = src/scene/collada/camera_info.cpp; sourceTree = SOURCE_ROOT; };
+		913468B892B64A80868CF977 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CGL/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		95A65A3DDD0742D7984C0601 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = CGL/deps/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		98B28E506AE04E628F9E6E55 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_info.h; path = src/scene/collada/sphere_info.h; sourceTree = SOURCE_ROOT; };
+		A1C437C440EE4A889F421EF2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = CGL/deps/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		A37E813D8F8F4B19854C98DA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CGL/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		A4B557D6B5E342C88EF7FC1C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bvh.cpp; path = src/scene/bvh.cpp; sourceTree = SOURCE_ROOT; };
+		A6BE80CB7E9C49F4B3076BFC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CGL/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		A7081B93327446A68C3BF78B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/scene.h; sourceTree = SOURCE_ROOT; };
+		A85C3291241A4399B10ED413 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material_info.cpp; path = src/scene/collada/material_info.cpp; sourceTree = SOURCE_ROOT; };
+		AA868B68D7234F72B903DA80 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		AB698C0640BD40D4BFF61D4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CGL/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		AFD0E028741B4C96A9D7847F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_drawing.h; path = src/util/sphere_drawing.h; sourceTree = SOURCE_ROOT; };
+		B039E108A3C845BC8787A2CC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/spectrum.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spectrum.cpp; path = CGL/src/spectrum.cpp; sourceTree = SOURCE_ROOT; };
+		B0558891BE3442C18BB70E6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bsdf.cpp; path = src/pathtracer/bsdf.cpp; sourceTree = SOURCE_ROOT; };
+		B13BCDD0AFD644F7BD9B9145 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = application.cpp; path = src/application/application.cpp; sourceTree = SOURCE_ROOT; };
+		B1651B882F4C407B9F678ADD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = CGL/src/path.cpp; sourceTree = SOURCE_ROOT; };
+		B37B4D251594412196168718 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CGL/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		B4EBC6ACEC9A4D8C89D36AD6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CGL/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		B68DC0915F2E4AD7A0E2FFAB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/primitive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = primitive.h; path = src/scene/primitive.h; sourceTree = SOURCE_ROOT; };
+		B94D278E31F24B98920654C0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = CGL/deps/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		BA98D5AA47394C10A4E295D6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object.h; path = src/scene/object.h; sourceTree = SOURCE_ROOT; };
+		BBBFF7A4FE7D4816B444FE51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CGL/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		BBC8A9C3A7214468AE3ADFDE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = CGL/deps/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		BDB88FC26F5E4A5881A7288A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/gl_scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		BE58C210D53D414BA089D716 /* pathtracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pathtracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE919D29FF6C47A8A7507199 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = CGL/deps/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		C06B41C4B2F4446684CE9944 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CGL/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		C2414AFA16C5446CA92675EA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CGL/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		CAB975CB75614CA3AF07D1FB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB9671E850794E33B4D6878B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/spot_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = spot_light.h; path = src/scene/gl_scene/spot_light.h; sourceTree = SOURCE_ROOT; };
+		D37133D946334501B9EB5CD2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CGL/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		D49F1D3E3F2144B5A6B8FFE8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/pathtracer/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		E0ED373CAF284D4E87134A72 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = polymesh_info.cpp; path = src/scene/collada/polymesh_info.cpp; sourceTree = SOURCE_ROOT; };
+		E1F97BD0F1D54397B476A6B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CGL/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		E326A4168B4F4B1FAD38BED4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = object.cpp; path = src/scene/object.cpp; sourceTree = SOURCE_ROOT; };
+		E4A4E5A140054696BAAE88FD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = CGL/deps/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		E655E5B8C2A640E784463EF3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CGL/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		EA3EADEE78314B22958A9C6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light_info.h; path = src/scene/collada/light_info.h; sourceTree = SOURCE_ROOT; };
+		ED88707F23164E4B826FA87D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = CGL/src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		EEA1B6382C914059B6A09D4D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/scene/light.h; sourceTree = SOURCE_ROOT; };
+		EF99A08C0F254420BFDE9656 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = CGL/deps/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		F02D16B29A7B41FAB6C5F28B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CGL/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		F192DB0A6EC049E1BA16A270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CGL/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		F1EBAEE8DF8346A384FDD3AB /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FF1513AD6F4258BDBAE496 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/work_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = work_queue.h; path = src/util/work_queue.h; sourceTree = SOURCE_ROOT; };
+		F2C01F6D04534EF68C784969 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F4933E2AA4864657A1E2C34D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_info.cpp; path = src/scene/collada/sphere_info.cpp; sourceTree = SOURCE_ROOT; };
+		F4C32E5D9E4E4D95A514B84B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F66FF90FB8AD4EF2ACFEAEF9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raytraced_renderer.h; path = src/pathtracer/raytraced_renderer.h; sourceTree = SOURCE_ROOT; };
+		F778D71A3D7040849544FCE0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = polymesh_info.h; path = src/scene/collada/polymesh_info.h; sourceTree = SOURCE_ROOT; };
+		FA7DF05B31DF4A5F822FD522 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/draw_style.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = draw_style.h; path = src/scene/gl_scene/draw_style.h; sourceTree = SOURCE_ROOT; };
+		FB83771B79EA42A6BBF80288 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/ray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ray.h; path = src/pathtracer/ray.h; sourceTree = SOURCE_ROOT; };
+		FD205FB7A1F9469A9FDFE4BE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = environment_light.cpp; path = src/scene/environment_light.cpp; sourceTree = SOURCE_ROOT; };
+		FDB04D227D794C29902BC869 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CGL/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		FE2561162B9C47448C26DC31 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/pathtracer/camera.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1BD4CB427895458B8D7E325F /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				2C09294D501D4080A8718849 /* CMake Rules */,
+				F2C01F6D04534EF68C784969 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		1DAE97D96F9F4F5D85275930 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C52FC8C8CFC04FF88F126920 /* CMake Rules */,
+				0E565DBACD404D14AC81EDEF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		2C09294D501D4080A8718849 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		44C954B84131402F94177F84 = {
+			isa = PBXGroup;
+			children = (
+				C54B6AEDACF14DA49AA97F5D /* pathtracer */,
+				1DAE97D96F9F4F5D85275930 /* ALL_BUILD */,
+				F1743E6C0C0648E0BA91FA42 /* CGL */,
+				9964746C942C4166A7E73E86 /* glew */,
+				CF8981CCDEC74BB09B729850 /* GLFW3 */,
+				D3C74573EBB14688BA48B992 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7537BEE5A619408BBFCD3CC7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6BE80CB7E9C49F4B3076BFC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/base64.cpp */,
+				3BF875615C214B0293E5196A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/color.cpp */,
+				81FB0B1C9AC14F30A663C73C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/complex.cpp */,
+				46F951C282D944D9AE115DC8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/lodepng.cpp */,
+				FDB04D227D794C29902BC869 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix3x3.cpp */,
+				B4EBC6ACEC9A4D8C89D36AD6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix4x4.cpp */,
+				ED88707F23164E4B826FA87D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdfont.cpp */,
+				5DAB5ABE0E874FA5A560D900 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdtext.cpp */,
+				B1651B882F4C407B9F678ADD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp */,
+				BBBFF7A4FE7D4816B444FE51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/quaternion.cpp */,
+				B039E108A3C845BC8787A2CC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/spectrum.cpp */,
+				4DDBB37922B545D3A90A0506 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/tinyxml2.cpp */,
+				913468B892B64A80868CF977 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector2D.cpp */,
+				A37E813D8F8F4B19854C98DA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector3D.cpp */,
+				0E93179446B5413C916164A0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector4D.cpp */,
+				10025D51D55648848A270E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7CF036DCE93E431293990750 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				B1D456741D8644E98E20A1CF /* Header Files */,
+				AF80433E05FA4C5BBCCDECB2 /* Source Files */,
+				13D630B6B89B4E7BACC9105E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		9964746C942C4166A7E73E86 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				F6AC0C94B36A4FBB9E8D5654 /* Source Files */,
+				F4C32E5D9E4E4D95A514B84B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		AF80433E05FA4C5BBCCDECB2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C06B41C4B2F4446684CE9944 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_init.m */,
+				3D4B1AAA53764C9082F64853 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.m */,
+				F192DB0A6EC049E1BA16A270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_monitor.m */,
+				BE919D29FF6C47A8A7507199 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_time.c */,
+				3D46E49200DB48D3A030EC34 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_window.m */,
+				3AF1BD4C7BA6417E8AAE2569 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/context.c */,
+				2837637C18104A33BE7FA51D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.c */,
+				E655E5B8C2A640E784463EF3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/init.c */,
+				67B3E182F6814169B486D3B3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/input.c */,
+				C2414AFA16C5446CA92675EA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/monitor.c */,
+				AB698C0640BD40D4BFF61D4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.m */,
+				EF99A08C0F254420BFDE9656 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.c */,
+				B94D278E31F24B98920654C0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.c */,
+				74DDF6F9EE344257B6563D29 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/vulkan.c */,
+				1F3A1149B908476FB06D335D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B1D456741D8644E98E20A1CF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F02D16B29A7B41FAB6C5F28B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				7E44BD6188444AC98E4F7B95 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				A1C437C440EE4A889F421EF2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.h */,
+				0A678B914754423FA58C93AD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_platform.h */,
+				E4A4E5A140054696BAAE88FD /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.h */,
+				E1F97BD0F1D54397B476A6B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/internal.h */,
+				95A65A3DDD0742D7984C0601 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/mappings.h */,
+				D37133D946334501B9EB5CD2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.h */,
+				BBC8A9C3A7214468AE3ADFDE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.h */,
+				08FFCD529F74483DA864A2D2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.h */,
+				0B90E8925B5B4FA083D71BAF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C52FC8C8CFC04FF88F126920 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C54B6AEDACF14DA49AA97F5D /* pathtracer */ = {
+			isa = PBXGroup;
+			children = (
+				E05516AB3600429FACC93E8B /* Source Files */,
+				C900D96EB7F44314B8556B8C /* Header Files */,
+				CAB975CB75614CA3AF07D1FB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CMakeLists.txt */,
+			);
+			name = pathtracer;
+			sourceTree = "<group>";
+		};
+		C900D96EB7F44314B8556B8C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7441374065A843679A487A32 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.h */,
+				4A440DC6B80E436DB6C8C947 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.h */,
+				3B94BF6905804BBCBF279719 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/renderer.h */,
+				6966E364BD914DC08ACFA466 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.h */,
+				0FF6293AF4FD45FF8F15E1E3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.h */,
+				29C8D533F27A4A50A34B9A60 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/intersection.h */,
+				3DE5F6D0026748238B97C55B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.h */,
+				FB83771B79EA42A6BBF80288 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/ray.h */,
+				F66FF90FB8AD4EF2ACFEAEF9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.h */,
+				68BB7D262E494DE18C69F987 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.h */,
+				59284C51458E42529F5818F8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/aggregate.h */,
+				31E5AB5835A844CC88BA8387 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.h */,
+				6382FDCC25414F2CBC4DEF9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.h */,
+				08281077B423478D97931279 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.h */,
+				832AFDE27D78400CA0EF1D6C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.h */,
+				89C49F879D604C63B92BF986 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada_info.h */,
+				EA3EADEE78314B22958A9C6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.h */,
+				8BAE88DACD374A6894643CD8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.h */,
+				F778D71A3D7040849544FCE0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.h */,
+				98B28E506AE04E628F9E6E55 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.h */,
+				AA868B68D7234F72B903DA80 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.h */,
+				19F1B1F179CB400D80292703 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/ambient_light.h */,
+				48C1C39A26AF46A48FC955A9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/area_light.h */,
+				49207111DAF341B6B9018D5A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/directional_light.h */,
+				FA7DF05B31DF4A5F822FD522 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/draw_style.h */,
+				27C30DBDD0354916B67E615D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/environment_light.h */,
+				0BBFD4E20BFA401E9CC2B8A3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/material.h */,
+				00800AC6832647D683D8C9AA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.h */,
+				1FED22CE1C804743BEF10B0E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh_view.h */,
+				88FA1C940C1A4986BBDCA32E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/point_light.h */,
+				4A305F138CBB4F7BA8C02720 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.h */,
+				BDB88FC26F5E4A5881A7288A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.h */,
+				CB9671E850794E33B4D6878B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/spot_light.h */,
+				EEA1B6382C914059B6A09D4D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.h */,
+				BA98D5AA47394C10A4E295D6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.h */,
+				B68DC0915F2E4AD7A0E2FFAB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/primitive.h */,
+				A7081B93327446A68C3BF78B /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/scene.h */,
+				15EBEF25A33C468A860AE778 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.h */,
+				76317389C5364B08AE350690 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.h */,
+				3A8A97CEA4BE44F48F4153D8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.h */,
+				784A40C29963401C8575ADB6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/image.h */,
+				63EA78F6E44F43D983F279E6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/mutablePriorityQueue.h */,
+				608935DC03C84552BBDCE6F0 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/random_util.h */,
+				AFD0E028741B4C96A9D7847F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.h */,
+				F1FF1513AD6F4258BDBAE496 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/work_queue.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CF8981CCDEC74BB09B729850 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				1BD4CB427895458B8D7E325F /* uninstall */,
+				7CF036DCE93E431293990750 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		D3C74573EBB14688BA48B992 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16A42BBE8F584174BA98483B /* CGL */,
+				F1EBAEE8DF8346A384FDD3AB /* glew */,
+				5755E7234A764044B27463D1 /* glfw */,
+				BE58C210D53D414BA089D716 /* pathtracer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E05516AB3600429FACC93E8B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B13BCDD0AFD644F7BD9B9145 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.cpp */,
+				7B682128D3674CD098E72CA4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/main.cpp */,
+				1764EEBE3AB348FB87AF29C5 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.cpp */,
+				B0558891BE3442C18BB70E6A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.cpp */,
+				FE2561162B9C47448C26DC31 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.cpp */,
+				6410F5DDD5034CC28B061702 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.cpp */,
+				860C563E6003464CB16E7481 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.cpp */,
+				D49F1D3E3F2144B5A6B8FFE8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.cpp */,
+				6D05D7D0EA984DAFA89FA6EE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.cpp */,
+				A4B557D6B5E342C88EF7FC1C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.cpp */,
+				8FFF0AD151884F9394B5C57F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.cpp */,
+				079549496B264FE68FE4DA9C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.cpp */,
+				32C1B8EEF9DC4EAD882A2272 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.cpp */,
+				A85C3291241A4399B10ED413 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.cpp */,
+				E0ED373CAF284D4E87134A72 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.cpp */,
+				F4933E2AA4864657A1E2C34D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.cpp */,
+				FD205FB7A1F9469A9FDFE4BE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.cpp */,
+				8E54769331A34CF6B9ABCE43 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.cpp */,
+				7BD28263D41E48C5A19B748C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.cpp */,
+				02322095FA514257B8D1D446 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.cpp */,
+				8FEAF4DC9CD046D689FF33FF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.cpp */,
+				E326A4168B4F4B1FAD38BED4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.cpp */,
+				66F3D7F1752748C3A0906270 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.cpp */,
+				78FE23F83C0E4FF7A9430E22 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.cpp */,
+				14E7D93D4ACB48F1B0E2C10F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.cpp */,
+				30B0213AB6C347BF86954C4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F1743E6C0C0648E0BA91FA42 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				7537BEE5A619408BBFCD3CC7 /* Source Files */,
+				5B4757E26FD04C4C9E50D0CF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+		F6AC0C94B36A4FBB9E8D5654 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B37B4D251594412196168718 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glew.c */,
+				7BE3DFD0D8D84826BF090F51 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glewinfo.c */,
+				04A13FA384C246BF830916D9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17BFF24C5DC04BBBBF48C83B /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B483DE2B064D7E938096B9 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				166E2E96E2A8443E81730F8A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 5755E7234A764044B27463D1 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63C8C54D639747948119C7BB /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817AFF3868E946AAB0321111 /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				29A623A152234C3696F8950C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B040872AAF542DA94676C31 /* PBXTargetDependency */,
+				61BF1E0B36A04C9B9ED44D9A /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 16A42BBE8F584174BA98483B /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE2C66F332794F5681758107 /* pathtracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28F0F953F7745439B48C495 /* Build configuration list for PBXNativeTarget "pathtracer" */;
+			buildPhases = (
+				585EB75F082C41DE931F8531 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FA12EFF967E4E3FAD4CF636 /* PBXTargetDependency */,
+				B0184BA95C2441D6AB155940 /* PBXTargetDependency */,
+				C27409FBCF634514B4E6BFE2 /* PBXTargetDependency */,
+				7073E936EA64480680C67D05 /* PBXTargetDependency */,
+			);
+			name = pathtracer;
+			productName = pathtracer;
+			productReference = BE58C210D53D414BA089D716 /* pathtracer */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC68D680895C404F80009FAF /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069BB4A8B8CE44FE8DF61814 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				7824A4CEBC204600B4D07B5A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = F1EBAEE8DF8346A384FDD3AB /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5349C1BBE214C3796A3D137 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 37EE1000DF584A649655D73C /* Build configuration list for PBXProject "Assignment3" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2FF0056A22C94A98A8496777 /* Debug */,
+				58144720684640D4AC8F1706 /* Release */,
+				9A666BC6B1D54126A9EB998F /* MinSizeRel */,
+				76C7E778255D4B54A544FD65 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 44C954B84131402F94177F84;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				7F88F4543337471196BBB9E8 /* ALL_BUILD */,
+				63C8C54D639747948119C7BB /* CGL */,
+				33C7DCE99D3B48239461014C /* ZERO_CHECK */,
+				EC68D680895C404F80009FAF /* glew */,
+				17BFF24C5DC04BBBBF48C83B /* glfw */,
+				BA79204476AA4F5997E882E4 /* install */,
+				AE2C66F332794F5681758107 /* pathtracer */,
+				698E784AC0304CF2818EDD96 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EF9D473041646FA815D0753 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw -f /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		71ED7E2FAEC746F59F15C74A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8E2A7ABFFED240B0898BFAA0 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		AAECAAA97A1E43049A3497C2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B1B080FA18904F4185FB8964 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build -f /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B63CCD51D4ED44CB858F81FF /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build -f /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		ECE7D942E40547378EE343FE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build -f /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F34ED04907AE4770BA9FD64D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166E2E96E2A8443E81730F8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7BD6B6976E4EA8B63F3335 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_init.m */,
+				59D5D233549C41779F7814B5 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_joystick.m */,
+				1260FFFB1D4949EB9B4FD099 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_monitor.m */,
+				A4F13A2CD8B942048C53094D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_time.c */,
+				D4FBED153EB4494683DEFD53 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/cocoa_window.m */,
+				5EC147DF7AC548D79C8E4A8C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/context.c */,
+				D53A49BB8C514F85B27E89D7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/egl_context.c */,
+				48B8A00703C64DF8B4052008 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/init.c */,
+				277B38C0F6CE468F99D410B7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/input.c */,
+				27926D4F002A445B8211C821 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/monitor.c */,
+				C775AA39314F4B5990B681FB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/nsgl_context.m */,
+				465F6EA09692417587603E77 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/osmesa_context.c */,
+				00C68171D4154D26A3189E47 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/posix_thread.c */,
+				9AC79F99ACFD4C1EAD96C850 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/vulkan.c */,
+				485B6A57E12D416084D5FE70 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A623A152234C3696F8950C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB6F52E3FA40A581781A54 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/base64.cpp */,
+				D207E9CC59F1483D8C7A7175 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/color.cpp */,
+				D422F9DDDEF04D64AD24009E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/complex.cpp */,
+				FCB1D1BCF8A4430E91C7E869 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/lodepng.cpp */,
+				42E51C71F7594B12A639BFE3 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix3x3.cpp */,
+				61383D45E2A04B66A042B7A9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/matrix4x4.cpp */,
+				11F587B461FB4438B3821820 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdfont.cpp */,
+				B3232AC30D1145B28B3B1FAB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/osdtext.cpp */,
+				39030572929E4E85851690DC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/path.cpp */,
+				59636A880F1D418D8B01CBEA /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/quaternion.cpp */,
+				8BDAECBB719E428F8FE4C96A /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/spectrum.cpp */,
+				69AB37B655A74ACD8C3F2ABE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/tinyxml2.cpp */,
+				B07AFFA6809F40E197C57BD4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector2D.cpp */,
+				1E65E14DBA0C439A8A689AE7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector3D.cpp */,
+				5AFEC5BE3B154C8BB165BCC4 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/vector4D.cpp */,
+				E8ADDBD2ED824453917C39B9 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585EB75F082C41DE931F8531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3ADFC74004427798FB88B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/application.cpp */,
+				F7936F45E01D46FD8FEEF18F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/main.cpp */,
+				C3049C2E682647BE9E7D31B6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/application/meshEdit.cpp */,
+				1758EC6B3672425F82C959B2 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/bsdf.cpp */,
+				95D40D95E1074600A06A2FA6 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/camera.cpp */,
+				5CC591AE63DB4DDFBED3B59C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/pathtracer.cpp */,
+				2367D57D83644BFCB26EA971 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/raytraced_renderer.cpp */,
+				CA3E5BB120CA4FF49371EDFE /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/pathtracer/sampler.cpp */,
+				D93B6568CB17489391A3526E /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bbox.cpp */,
+				73EF1000EBAC458AA428B77F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/bvh.cpp */,
+				EADC4DA904C44D5C8EB42C98 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/camera_info.cpp */,
+				9AE369AB99CC4E22A006A37D /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/collada.cpp */,
+				06874CC62D314D03885ED4B8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/light_info.cpp */,
+				AD6256FE3E064228AE4EF906 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/material_info.cpp */,
+				40D210C15EA54421BD7B5C6C /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/polymesh_info.cpp */,
+				63FA4DFBB5E44637A6B327DB /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/collada/sphere_info.cpp */,
+				CF6A0F4835114356A2968819 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/environment_light.cpp */,
+				73E04EBB2DCD4F0A8EFFADE8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/mesh.cpp */,
+				8C1BE2CD30994A4A94E51DBC /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/scene.cpp */,
+				590EBD4FDA144ED5A73CAD25 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/gl_scene/sphere.cpp */,
+				F8CB54EC06E44097AAB29076 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/light.cpp */,
+				C72751BE894E4CA3940F9AB8 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/object.cpp */,
+				612E2965390D431D834D5B27 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/sphere.cpp */,
+				D03660801AC64900811890CF /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/scene/triangle.cpp */,
+				8647F839C01C475C8F8FA9F7 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/halfEdgeMesh.cpp */,
+				B95035FE8B604D12AA886190 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src/util/sphere_drawing.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7824A4CEBC204600B4D07B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15842FEF1B00409CA8DB8F21 /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glew.c */,
+				95A779E4C96A4675A755BD3F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/glewinfo.c */,
+				94E9E22F3105449B85AA6B4F /* /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0871A42249CA4EDAAA7BE014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33C7DCE99D3B48239461014C /* ZERO_CHECK */;
+			targetProxy = 746C4490D2614950A7D55F55 /* PBXContainerItemProxy */;
+		};
+		0B040872AAF542DA94676C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC68D680895C404F80009FAF /* glew */;
+			targetProxy = 7001DB9A758F4E39A4F3318D /* PBXContainerItemProxy */;
+		};
+		0B47B6D903CE46B48FCB72B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17BFF24C5DC04BBBBF48C83B /* glfw */;
+			targetProxy = 8E9CC3BCAD08454389D01CB5 /* PBXContainerItemProxy */;
+		};
+		1B6308B9A12E4E569469360F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2C66F332794F5681758107 /* pathtracer */;
+			targetProxy = 08E3A20F8DFE4CF481F54F77 /* PBXContainerItemProxy */;
+		};
+		1FA12EFF967E4E3FAD4CF636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33C7DCE99D3B48239461014C /* ZERO_CHECK */;
+			targetProxy = D5E56A9461184B44B48A177C /* PBXContainerItemProxy */;
+		};
+		4E7AE09D584941B9A22BBFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC68D680895C404F80009FAF /* glew */;
+			targetProxy = DDA9A984D71147F698002922 /* PBXContainerItemProxy */;
+		};
+		61BF1E0B36A04C9B9ED44D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17BFF24C5DC04BBBBF48C83B /* glfw */;
+			targetProxy = 656C3381C90349A3908A29F9 /* PBXContainerItemProxy */;
+		};
+		7073E936EA64480680C67D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17BFF24C5DC04BBBBF48C83B /* glfw */;
+			targetProxy = 279F4716B007462CBEC934CA /* PBXContainerItemProxy */;
+		};
+		B0184BA95C2441D6AB155940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C8C54D639747948119C7BB /* CGL */;
+			targetProxy = FD75851ACBA9426CA82E8112 /* PBXContainerItemProxy */;
+		};
+		C27409FBCF634514B4E6BFE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC68D680895C404F80009FAF /* glew */;
+			targetProxy = F9A89F999D1B43F3A9FF3D88 /* PBXContainerItemProxy */;
+		};
+		D5D92980CBBB4B03A7BD6242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C8C54D639747948119C7BB /* CGL */;
+			targetProxy = 3B74D40F46884EDE9615DC0A /* PBXContainerItemProxy */;
+		};
+		EB2ED175068C48DEAB18B540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F88F4543337471196BBB9E8 /* ALL_BUILD */;
+			targetProxy = 60D44CF124CE41C3B4B0F35F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0505EF3C3D2D441F8C4D1FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		13A1EE2BE966450A89392BB8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		25CF2961C2EB423D800E6F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		277CD80F78AC4A61A591AE59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F934F1334E149948FCA789D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		4A0BCBCF88E546A79A9870E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		577956997E9C4951BF33B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5EC650EF9412428A81C2E50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		61F7D2305CCA436D99874766 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		79870091DED8460293DA23B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7AD7AF35377D47D7AC478352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		81FEBD64DD9D4A0DB12E8A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8254901634B04BB18B35C5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		82B1E673FD3A4DF9BE1182DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/build";
+			};
+			name = Debug;
+		};
+		899A31AF8E4E4B5FBE1EACCC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/build";
+			};
+			name = MinSizeRel;
+		};
+		8AB27BF407E64C4FBFE80BE8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9129DAA534544AA3AEAB99C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		93A346ED31B44B3E8A251FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		94ADFC09EC8F4CFC8E6BE0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		95C913B8CDD446EAB5FFC11A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/RelWithDebInfo/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew/RelWithDebInfo/libglew.a /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/RelWithDebInfo/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		96985D25D0F24DF9B4A64942 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		96B66A6087F54ECD836DB353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/Debug/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew/Debug/libglew.a /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/Debug/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9A65C94E151D4E55910811DB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A7D5CD036E4F4717906BB329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/build";
+			};
+			name = Release;
+		};
+		B468A464E9444E548B8C60CA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL",/usr/local/include/freetype2,"/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BD158BBC95E245D68080B3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C3840A8B64DD4B0AAB666652 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D47AB678E0C7490683FBF030 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DB9BB836F4924D18BE23082D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/Release/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew/Release/libglew.a /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/Release/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DCBDACA1CD444F4685237C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E7124C756B2F42EC9F2F2F57 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E80FDED96E004CC79639BA51 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F5BFF66F5BE848DFB1BB1996 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F73F63778125439580B7632E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/include/CGL","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glew/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/MinSizeRel/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /usr/local/lib/libfreetype.dylib /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glew/MinSizeRel/libglew.a /Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src/MinSizeRel/libglfw3.a  -framework Cocoa -framework IOKit -framework CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F91448CE88354C2E89093020 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/include","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/CGL/deps/glfw/src","/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FEABE77B9B66461A89823541 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/max/Desktop/cs284/p3-1-pathtracer-sp20-MaxTang233/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		069BB4A8B8CE44FE8DF61814 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81FEBD64DD9D4A0DB12E8A15 /* Debug */,
+				79870091DED8460293DA23B6 /* Release */,
+				E80FDED96E004CC79639BA51 /* MinSizeRel */,
+				D47AB678E0C7490683FBF030 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		30EF930E19154854A07BD25F /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ADFC09EC8F4CFC8E6BE0EF /* Debug */,
+				5EC650EF9412428A81C2E50E /* Release */,
+				277CD80F78AC4A61A591AE59 /* MinSizeRel */,
+				F5BFF66F5BE848DFB1BB1996 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		37EE1000DF584A649655D73C /* Build configuration list for PBXProject "Assignment3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B1E673FD3A4DF9BE1182DC /* Debug */,
+				A7D5CD036E4F4717906BB329 /* Release */,
+				899A31AF8E4E4B5FBE1EACCC /* MinSizeRel */,
+				3F934F1334E149948FCA789D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44E70150EA9646708ED6C2A6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8254901634B04BB18B35C5BF /* Debug */,
+				4A0BCBCF88E546A79A9870E6 /* Release */,
+				8AB27BF407E64C4FBFE80BE8 /* MinSizeRel */,
+				96985D25D0F24DF9B4A64942 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B75C263C9CA4644A148E110 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577956997E9C4951BF33B8BA /* Debug */,
+				0505EF3C3D2D441F8C4D1FEB /* Release */,
+				C3840A8B64DD4B0AAB666652 /* MinSizeRel */,
+				13A1EE2BE966450A89392BB8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		817AFF3868E946AAB0321111 /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD7AF35377D47D7AC478352 /* Debug */,
+				93A346ED31B44B3E8A251FA9 /* Release */,
+				61F7D2305CCA436D99874766 /* MinSizeRel */,
+				B468A464E9444E548B8C60CA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FED377FEF454475BA3CEB5D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CF2961C2EB423D800E6F9C /* Debug */,
+				DCBDACA1CD444F4685237C85 /* Release */,
+				E7124C756B2F42EC9F2F2F57 /* MinSizeRel */,
+				FEABE77B9B66461A89823541 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C0B483DE2B064D7E938096B9 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD158BBC95E245D68080B3B6 /* Debug */,
+				9129DAA534544AA3AEAB99C8 /* Release */,
+				9A65C94E151D4E55910811DB /* MinSizeRel */,
+				F91448CE88354C2E89093020 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C28F0F953F7745439B48C495 /* Build configuration list for PBXNativeTarget "pathtracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B66A6087F54ECD836DB353 /* Debug */,
+				DB9BB836F4924D18BE23082D /* Release */,
+				F73F63778125439580B7632E /* MinSizeRel */,
+				95C913B8CDD446EAB5FFC11A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5349C1BBE214C3796A3D137 /* Project object */;
+}
